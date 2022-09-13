@@ -35,5 +35,5 @@ Services.scriptloader.loadSubScript("chrome://browser/content/browser-startup.js
 Services.scriptloader.loadSubScript("chrome://browser/content/browser-tabbar.js", this);
 Services.scriptloader.loadSubScript("chrome://browser/content/browser-userChrome.js", this);
 Services.scriptloader.loadSubScript("chrome://browser/content/browser-preferences.js", this);
-}, 500);
+}, 120);
 </script>

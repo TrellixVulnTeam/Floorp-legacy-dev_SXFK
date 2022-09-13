@@ -46,3 +46,12 @@ show-CustomURL-sidebar =
 
 Edit-Custom-URL =
  .label = Edit Custom URL in Sidebar
+
+sidebar-addons-button =
+  .tooltiptext = Open Addon manager
+
+sidebar-passwords-button =
+  .tooltiptext = Open Password manager
+
+sidebar-preferences-button =
+  .tooltiptext = Open Preferences

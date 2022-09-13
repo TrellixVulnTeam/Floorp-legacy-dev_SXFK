@@ -535,7 +535,7 @@ border-right: solid 1px var(--arrowpanel-border-color);
 }
 
 @media not (prefers-contrast) {
-  .sidebar2-icon:hover, .sidepanel-icon:hover {
+  .sidebar2-icon:hover, #preferences-icon:hover, .sidepanel-icon:hover {
     background-color: color-mix(in srgb, currentColor 10%, transparent);
   }
 }
@@ -585,4 +585,16 @@ border-right: solid 1px var(--arrowpanel-border-color);
 
 #select-CustomURL{
   list-style-image: url("chrome://global/skin/icons/defaultFavicon.svg");
+}
+
+#preferences-icon{
+  list-style-image: url("chrome://browser/skin/settings.svg");
+}
+
+#passwords-icon{
+  list-style-image: url("chrome://browser/skin/login.svg");
+}
+
+#addons-icon{
+  list-style-image: url("chrome://mozapps/skin/extensions/extension.svg");
 }
