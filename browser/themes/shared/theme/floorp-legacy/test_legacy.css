@@ -712,14 +712,11 @@ menupopup menucaption,
   margin-inline-start: 0 !important;
 }
 
-menu>.menu-iconic-text,
-menuitem>.menu-iconic-text {
-  padding-inline-start: var(--uc-contextmenu-menuicon-margin-inline) !important;
-}
+
+
 
 .menu-text,
 .menu-iconic-text {
-  margin-inline-start: 0 !important;
   padding-block: 0 !important;
 }
 
@@ -743,7 +740,6 @@ menuitem:is(.menuitem-iconic:not([data-usercontextid]), [type="checkbox"], [type
 
 .menu-right,
 .menu-accel-container {
-  appearance: none !important;
   margin-inline-end: 0 !important;
   -moz-context-properties: fill;
   fill: currentColor !important;
@@ -984,9 +980,11 @@ menuitem[checked="true"]>.menu-iconic-left,
       }
     }
   }
+  
+  menu>.menu-iconic-text,	
+menuitem>.menu-iconic-text {	
+  padding-inline-start: var(--uc-contextmenu-menuicon-margin-inline) !important;	
 }
-
-@media (-moz-windows-compositor) {
   @supports -moz-bool-pref("uc.tweak.win11-mica") {
 
     /* enable mica appearance */
@@ -1367,7 +1365,6 @@ menuitem[checked="true"]>.menu-iconic-left,
 }
 
 #navigator-toolbox :-moz-any(.toolbarbutton-1, .scrollbutton-up, .scrollbutton-down) {
-  max-height: 32px !important;
   height: 32px !important;
   min-height: 32px !important;
 }
@@ -3416,6 +3413,16 @@ richlistitem[originaltype="loginsFooter"] .ac-site-icon {
   transform: scaleX(-1) !important;
 
 }
+
+  /* Icons Color */
+  #appMenu-multiView .subviewbutton::before,
+  #appMenu-proton-update-banner::before,
+  #downloadsHistory .button-icon,
+  .subviewbutton > image {
+    fill: currentColor !important;
+    fill-opacity: var(--toolbarbutton-icon-fill-opacity) !important;
+    -moz-context-properties: fill !important;
+  }
 
 /* #endregion */
 
